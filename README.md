@@ -36,7 +36,7 @@ O objetivo do projeto é modelar o **Sistema de Gestão Olímpica (SGO)** utiliz
 ---
 
 ### 5. Diagrama de Implantação
-![Diagrama de Implantação](imagens/diagrama-de-implantacao.png)
+![Diagrama de Implantação](imagens/diagrama-de-implantação.png)
 
 ---
 
@@ -46,4 +46,5 @@ O objetivo do projeto é modelar o **Sistema de Gestão Olímpica (SGO)** utiliz
 - **Arthur Pedra**
 
 PUC Minas – Engenharia de Software  
+
 
