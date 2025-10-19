@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Diagrama de Caso de Uso" id="NHpy0HZfZ8OJ4K8esoG-">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TMdtJrhgadJ7ampUln0h-32" value="&lt;b&gt;Atleta&lt;/b&gt;" style="shape=swimlane;rounded=0;startSize=28;swimlaneFillColor=#FFFFFF;strokeColor=#666666;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="770" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-33" value="- nome: String&lt;br/&gt;- pais: Pais" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-32">
+          <mxGeometry y="28" width="240" height="76.5" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-34" value="+ inscreverEmCompeticao(c: Competicao)" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-32">
+          <mxGeometry y="104.5" width="240" height="65.5" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-35" value="&lt;b&gt;Pais&lt;/b&gt;" style="shape=swimlane;rounded=0;startSize=28;swimlaneFillColor=#FFFFFF;strokeColor=#666666;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="990" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-36" value="- nome: String&lt;br/&gt;- medalhasOuro: int&lt;br/&gt;- medalhasPrata: int&lt;br/&gt;- medalhasBronze: int" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-35">
+          <mxGeometry y="28" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-37" value="+ adicionarMedalha(tipo: String)" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-35">
+          <mxGeometry y="118" width="240" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-38" value="&lt;b&gt;Competicao&lt;/b&gt;" style="shape=swimlane;rounded=0;startSize=28;swimlaneFillColor=#FFFFFF;strokeColor=#666666;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="760" width="280" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-39" value="- modalidade: String&lt;br/&gt;- data: LocalDate&lt;br/&gt;- horario: LocalTime&lt;br/&gt;- local: Local&lt;br/&gt;- atletasInscritos: List&lt;Atleta&gt;&lt;br/&gt;- resultado: Resultado" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-38">
+          <mxGeometry y="28" width="280" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-40" value="+ adicionarAtleta(a: Atleta)&lt;br/&gt;+ definirLocal(l: Local)&lt;br/&gt;+ registrarResultado(r: Resultado)" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-38">
+          <mxGeometry y="136" width="280" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-41" value="&lt;b&gt;RelatorioMedalhas&lt;/b&gt;" style="shape=swimlane;rounded=0;startSize=28;swimlaneFillColor=#FFFFFF;strokeColor=#666666;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1020" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-42" value="- paises: List&lt;Pais&gt;" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-41">
+          <mxGeometry y="28" width="300" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-43" value="+ gerarRankingPorMedalhas(): List&lt;Pais&gt;" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-41">
+          <mxGeometry y="100" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-44" value="&lt;b&gt;Local&lt;/b&gt;" style="shape=swimlane;rounded=0;startSize=28;swimlaneFillColor=#FFFFFF;strokeColor=#666666;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="730" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-45" value="- nome: String&lt;br/&gt;- endereco: String&lt;br/&gt;- horariosOcupados: List&lt;LocalDateTime&gt;" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-44">
+          <mxGeometry y="28" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-46" value="+ verificarDisponibilidade(dataHora: LocalDateTime): boolean&lt;br/&gt;+ reservarHorario(dataHora: LocalDateTime)" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-44">
+          <mxGeometry y="118" width="300" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-47" value="&lt;b&gt;Resultado&lt;/b&gt;" style="shape=swimlane;rounded=0;startSize=28;swimlaneFillColor=#FFFFFF;strokeColor=#666666;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="960" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-48" value="- primeiroLugar: Atleta&lt;br/&gt;- segundoLugar: Atleta&lt;br/&gt;- terceiroLugar: Atleta" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-47">
+          <mxGeometry y="28" width="280" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-49" value="+ definirVencedores(a1: Atleta, a2: Atleta, a3: Atleta)" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" vertex="1" parent="TMdtJrhgadJ7ampUln0h-47">
+          <mxGeometry y="100" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-50" value="0..*  —  0..*" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="TMdtJrhgadJ7ampUln0h-38" target="TMdtJrhgadJ7ampUln0h-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-51" value="1  —  1" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="TMdtJrhgadJ7ampUln0h-38" target="TMdtJrhgadJ7ampUln0h-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-52" value="1  —  0..1" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="TMdtJrhgadJ7ampUln0h-38" target="TMdtJrhgadJ7ampUln0h-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-53" value="1  —  1" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="TMdtJrhgadJ7ampUln0h-32" target="TMdtJrhgadJ7ampUln0h-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-54" value="1  —  0..*" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="TMdtJrhgadJ7ampUln0h-41" target="TMdtJrhgadJ7ampUln0h-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-55" value="«constraint»&#xa;Um Local só pode abrigar&#xa;uma competição por vez." style="shape=note;whiteSpace=wrap;html=1;size=14;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="660" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-56" value="«constraint»&#xa;O atleta pode participar de várias competições,&#xa;mas representa um único País em cada modalidade." style="shape=note;whiteSpace=wrap;html=1;size=14;" vertex="1" parent="1">
+          <mxGeometry x="380" y="630" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TMdtJrhgadJ7ampUln0h-57" value="«constraint»&#xa;Após a competição, registra-se 1º, 2º e 3º lugares." style="shape=note;whiteSpace=wrap;html=1;size=14;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="1140" width="320" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
