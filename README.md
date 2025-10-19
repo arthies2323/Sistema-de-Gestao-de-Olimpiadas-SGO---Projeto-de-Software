@@ -1,1 +1,1 @@
-# Sistema-de-Gerst-o-de-Olimp-adas-SGO---Projeto-de-Software
+# Sistema-de-Gestao-de-Olimpiadas-SGO---Projeto-de-Software
