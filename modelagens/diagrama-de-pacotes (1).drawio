@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Página-1" id="IqW0k_uyNZZVAZ7Ds6as">
+    <mxGraphModel dx="1971" dy="865" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-1" value="&lt;b&gt;modelo&lt;/b&gt;&lt;br/&gt;Classes: Atleta, Competicao, Local, Resultado, Pais" style="shape=folder;tabPosition=left;whiteSpace=wrap;html=1;strokeColor=#666666;align=left;spacingLeft=8;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280.01" width="437.0860927152318" height="348.83" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-2" value="&lt;b&gt;servico&lt;/b&gt;&lt;br/&gt;Serviços: CadastroCompeticao, InscricaoAtleta, RegistroResultado, AlocacaoLocal" style="shape=folder;tabPosition=left;whiteSpace=wrap;html=1;strokeColor=#666666;align=left;spacingLeft=8;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1109.4039735099338" y="280" width="556.2913907284768" height="348.83" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-3" value="&lt;b&gt;relatorio&lt;/b&gt;&lt;br/&gt;Componente: RelatorioMedalhas" style="shape=folder;tabPosition=left;whiteSpace=wrap;html=1;strokeColor=#666666;align=left;spacingLeft=8;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="520" y="670.01" width="437.0860927152318" height="333.67" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-4" value="&lt;b&gt;interface&lt;/b&gt;&lt;br/&gt;UI: Telas e APIs públicas do SGO" style="shape=folder;tabPosition=left;whiteSpace=wrap;html=1;strokeColor=#666666;align=left;spacingLeft=8;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1102.7814569536424" y="678.01" width="562.9139072847684" height="333.67" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-5" value="dependency&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="endArrow=block;dashed=1;html=1;strokeColor=#333333;" edge="1" parent="1" source="4fVdAKRYMCGImhvc4OEO-4" target="4fVdAKRYMCGImhvc4OEO-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-6" value="dependency" style="endArrow=block;dashed=1;html=1;strokeColor=#333333;" edge="1" parent="1" source="4fVdAKRYMCGImhvc4OEO-2" target="4fVdAKRYMCGImhvc4OEO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-7" value="dependncy" style="endArrow=block;dashed=1;html=1;strokeColor=#333333;" edge="1" parent="1" source="4fVdAKRYMCGImhvc4OEO-3" target="4fVdAKRYMCGImhvc4OEO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-8" value="«guideline»&#xa;Pacote interface não acessa diretamente o modelo;&#xa;sempre via servico." style="shape=note;whiteSpace=wrap;html=1;size=14;" vertex="1" parent="1">
+          <mxGeometry x="1102.7814569536424" y="1050.01" width="562.9139072847684" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="4fVdAKRYMCGImhvc4OEO-9" value="SGO&amp;nbsp;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1023.3112582781458" y="320.01" width="39.73509933774835" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
